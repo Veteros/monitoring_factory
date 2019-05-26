@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #6f42c1;
+}
+
+.back_login {
+    background-color: #6f42c1;
+}
+
+.back_login h1, h2, h3, h4, h5, h6, label, p {
+    color: white;
+}
+
+.login_area {
+    background-color: #6f42c1;
+    margin: 7% 20%;
+}
+/*or in login screen*/
+.or_div {
+    /* Прячем часть линий, выходящие за пределы блока */
+    overflow: hidden;
+    /* Выравниваем заголовок по центру, можно указать left, right для выравнивания влево или вправо */
+    text-align: center;
+    /* Размер заголовка */
+    font-size: 25px;
+    color: white;
+}
+
+.or_div:before, 
+.or_div:after{
+    /* Свойство content необходимо указывать хотя бы пустое, иначе псевдоэлементы не отобразятся */
+    content: "";
+    /* Свойства линий, выравнивание по центру по вертикали */
+    display: inline-block;
+    vertical-align: middle;
+    /* Ширина - 100% и указываем толщину линии */
+    width: 100%;
+    height: 2px;
+    /* Цвет линии */
+    background-color: #f4801a;
+    /* Возможность для пседоэлементов изменить позицию линии */
+    position: relative;
+}
+
+.or_div:before {
+    /* Ставим левую линию слева от текста, смещая ее на 100% влево */
+    margin-left: -100%;
+    /* Отступ линии от заголовка */
+    left: -14px;
+}
+
+.or_div:after {
+    /* Ставим правую линию справа от текста, смещая ее на 100% вправо */
+    margin-right: -100%;
+    /* Отступ линии от заголовка */
+    right: -14px;
+}
+
+label {
+    display: block;
+}
+
+.info_text h3 {
+    display: block;
+    text-align: center;
+}
+
+.image_user {
+    background-color: #6f42c1;
+}
+
+.image_user img {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.container-login {
+    background-color: #6f42c1;
+}
+
+.inputs {
+    padding: 0 15%;
+}
+
+.inputs input {
+    width: 100%;
+}
+
+.butt_login button {
+    margin: 5% auto;
+    width: 45%;
+}
+
+.butt_register button {
+    margin: 5% auto;
+    width: 45%;
+}
