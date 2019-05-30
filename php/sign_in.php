@@ -2,7 +2,7 @@
     $db = mysqli_connect('localhost', 'root', '', 'monitoring_users');
     session_start();
 
-    if (!isset($_SESSION['user_id'])) {
+    if (!isset($_SESSION['logged_user_id'])) {
 
     if (isset($_POST['do_login'])) {
         $user_name = mysqli_real_escape_string($db, trim($_POST['login']));
