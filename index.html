@@ -14,7 +14,7 @@
         <body>
             <div class="back_login container">
                     <div class="login_area">
-                        <form class="form_login form-group">
+                        <form class="form_login form-group" action="/php/sign_in.php" method="POST">
                             <div class="container-login">
                                 <div class="image_user">
                                     <img class="user img-responsive" src="images/NoPhotoAgentPicture.png"/>
@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div class="butt_login">
-                                    <button class="btn btn-block btn-success" type="button" alt="Prees to login">Sign in</button>
+                                    <button class="btn btn-block btn-success" type="submit" name="do_login" alt="Prees to login">Sign in</button>
                                 </div>
                                 <div class="or_div">
                                     <!-- <p class="or_text">or</p> -->
