@@ -19,6 +19,8 @@
             } else {
                 echo "Login or password is already exists";
             }
+        } else {
+            echo "Login or password is empty, or password not equal for password confirmation!";
         }
     }
 ?>
